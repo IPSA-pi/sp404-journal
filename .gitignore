@@ -1,0 +1,12 @@
+# site build artefacts
+site/node_modules/
+site/build/
+site/.svelte-kit/
+site/.pagefind/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Roland manual mirrors (copyrighted; regenerate with tools/update-manuals.sh)
+docs/
