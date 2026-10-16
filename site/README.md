@@ -23,6 +23,7 @@ Run these from `site/` (Node 24, npm 11):
 | `CONTENT_DIR` | `../content` | Content root, relative to `site/` (or absolute). Must contain `journal/` and `knowledge/`. |
 | `MANUAL_FILE` | `../docs/reference-manual-v5.50.md` | Manual mirror the `/shortcuts` page is generated from. |
 | `BASE_PATH` | *(empty)* | Set to e.g. `/sp404mkii` when hosting under a sub-path (GitHub Pages project site). Use the same value for `npm run preview`. |
+| `SITE_URL` | `http://localhost:4173` | Origin used for absolute links in `/feed.xml` (CI sets `https://<owner>.github.io`). |
 
 Examples:
 
@@ -45,6 +46,7 @@ pages show empty states. Malformed content fails the build.
 | `/tags/<tag>` | Entries with that tag. |
 | `/search` | Pagefind search over entries and topic pages (only those pages are indexed). |
 | `/shortcuts` | The manual's "List of shortcut keys" (Appendix), parsed at build time, filterable as you type. |
+| `/feed.xml` | RSS 2.0 feed of the 20 newest journal entries (summary + takeaways, full text in `content:encoded`). |
 
 ## Content rules (summary of SITE-PLAN.md section 1)
 

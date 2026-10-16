@@ -19,6 +19,7 @@
 
 <svelte:head>
 	<title>SP-404MKII notes</title>
+	<link rel="alternate" type="application/rss+xml" title="SP-404MKII notes" href="{base}/feed.xml" />
 </svelte:head>
 
 <header
@@ -59,4 +60,5 @@
 
 <footer class="border-t border-zinc-200 py-6 text-center text-xs text-zinc-500 dark:border-zinc-800">
 	Notes from Claude Code sessions about the Roland SP-404MKII. Manual excerpts &copy; Roland.
+	<a href="{base}/feed.xml" class="ml-1 underline hover:text-zinc-700 dark:hover:text-zinc-300">RSS feed</a>
 </footer>
