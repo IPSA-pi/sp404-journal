@@ -27,7 +27,7 @@ order: 20
 ## Choosing effects (MFX and DIRECT FX)
 - Hold `[MFX]` and turn `[VALUE]` or `[CTRL 3]` (or press pads `[1]`–`[16]`) to choose any effect, then release. `[MFX]` + `[DJFX LOOPER]` reaches #17 and up, `[MFX]` + `[ISOLATOR]` #33 and up.
   <!-- learned: 2026-10-14, entry: 2026-10-14-effects-buttons-and-delay-feedback, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7900737178465675.html, status: manual -->
-- DIRECT FX changes what the five effect buttons hold: `[SHIFT]` + pad `[13]` > EFX SET > DIRECT (Direct FX1–5 = `[FILTER+DRIVE]` … `[DJFX LOOPER]`).
+- DIRECT FX changes what the five effect buttons hold: `[SHIFT]` + pad `[16]` (or `[SHIFT]` + pad `[13]` > EFX SET), `[CTRL 3]` to DIRECT, press the effect button (Direct FX1–5 = `[FILTER+DRIVE]` … `[DJFX LOOPER]`), then `[VALUE]`, choose, `[VALUE]`. Example: Tape Echo on `[DELAY]` (FX3).
   <!-- learned: 2026-10-14, entry: 2026-10-14-effects-buttons-and-delay-feedback, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7956468378534795.html, status: manual -->
 
 ## Sending pads to buses
@@ -35,6 +35,10 @@ order: 20
   <!-- learned: 2026-10-14, entry: 2026-10-14-effects-buttons-and-delay-feedback, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7900225178464907.html, status: manual -->
 - `[REMAIN]` + a bank button sets the bus for a whole bank; `[REMAIN]` + `[EXT SOURCE]` sets it for the external inputs.
   <!-- learned: 2026-10-14, entry: 2026-10-14-effects-buttons-and-delay-feedback, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7900225178464907.html, status: manual -->
+- To move a pad from BUS 1 to BUS 2, select BUS 2 with `[BUS FX]` first, then press the pad while holding `[REMAIN]`.
+  <!-- learned: 2026-10-19, entry: 2026-10-19-assigning-pads-to-a-bus, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7900225178464907.html, status: manual -->
+- After `[REMAIN]` + `[EXT SOURCE]`, the `[EXT SOURCE]` button shows the input's bus: lit BUS 1, blinking BUS 2, dark DRY. Bus colours for the pads are changed in PAD SET (BUS COLOR).
+  <!-- learned: 2026-10-19, entry: 2026-10-19-assigning-pads-to-a-bus, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7900225178464907.html, status: manual -->
 
 ## Delay and keeping tails
 - There is no tails/spillover setting in the manual: switching a delay off with its button cuts the repeats.
@@ -69,6 +73,12 @@ order: 20
 ## Input FX
 - Input FX (EFX SET > OTHER > Input FX) process INPUT and LINE IN; Auto Pitch, Vocoder, Harmony and Gt Amp Sim are available only there. Input Bus sends the input to DRY, BUS 1 or BUS 2.
   <!-- learned: 2026-10-14, entry: 2026-10-14-effects-buttons-and-delay-feedback, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7957057178535563.html, status: manual -->
+- Guitar: front INPUT jack, `[MIC/GUITAR]` switch to the right, `[EXT SOURCE]` lit (blinking red means too hot). `[SHIFT]` + `[EXT SOURCE]` opens the input screen; `[CTRL 3]` sets the level.
+  <!-- learned: 2026-10-24, entry: 2026-10-24-effects-only-on-the-guitar, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7943233178517131.html, status: manual -->
+- On the input setting screen press `[VALUE]` for INPUT FX Setting, choose EFX Type, and edit with `[CTRL 1]`–`[CTRL 3]`. One effect at a time, on the input only.
+  <!-- learned: 2026-10-24, entry: 2026-10-24-effects-only-on-the-guitar, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7904935578470283.html, status: manual -->
+- Effects on the guitar only: send the input to BUS 1 with `[REMAIN]` + `[EXT SOURCE]`, put the sample banks on DRY with `[REMAIN]` + bank button, and set DRY Routing to "DRY" so samples skip BUS 3/4 too.
+  <!-- learned: 2026-10-24, entry: 2026-10-24-effects-only-on-the-guitar, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7957645978536331.html, status: manual -->
 
 ## Effect parameters
 - Filter+Drive: CUTOFF, RESONANCE, DRIVE; sub FLT TYPE (HPF/LPF), LOW FREQ, LOW GAIN.
@@ -91,3 +101,5 @@ order: 20
 ## Printing effects
 - Resample (`[RESAMPLE]`) while effects run to record them, including a delay tail, into a new sample.
   <!-- learned: 2026-10-14, entry: 2026-10-14-effects-buttons-and-delay-feedback, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7907213978473355.html, status: manual -->
+- A resampled pad left on the same bus plays through the effect a second time; move it to DRY, or switch the effect off before resampling.
+  <!-- learned: 2026-10-19, entry: 2026-10-19-recording-a-chromatic-part-into-a-pattern, status: unverified -->

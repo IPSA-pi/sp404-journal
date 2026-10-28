@@ -32,6 +32,12 @@ order: 50
 - Keep file and folder names short and plain ASCII, and leave cover art (JPG/PNG) off the card; you browse on a small screen.
   <!-- learned: 2026-10-12, entry: 2026-10-12-bandcamp-albums-unsupported-file, status: unverified -->
 
+## Exporting to the card
+- EXPORT SAMPLE: `[SHIFT]` + pad `[14]` (or `[SHIFT]` + pad `[13]` > IMPORT) > EXPORT to SD-CARD > SAMPLE, press the pads to export (lit orange = selected, press again to deselect), then `[VALUE]`; the files are for a computer or another SP-404MK2.
+  <!-- learned: 2026-10-18, entry: 2026-10-18-using-the-sp-404mkii-with-ableton-live, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7959642778538635.html, status: manual -->
+- MULTIPAD EXPORT: `[SHIFT]` + pad `[14]` > EXPORT to SD-CARD > MULTIPAD, press the pattern's pad; one WAV stem per pad is written to the card's `EXPORT` folder, ready for a DAW.
+  <!-- learned: 2026-10-18, entry: 2026-10-18-using-the-sp-404mkii-with-ableton-live, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/9039245990541067.html, status: manual -->
+
 ## Card layout
 - The user's card (`F:`, label SP404MKII) has `IMPORT`, `EXPORT` and `BKUP` folders at the root; `BKUP` is presumably where UTILITY > BACKUP writes (the manual doesn't name it).
   <!-- learned: 2026-10-12, entry: 2026-10-12-bandcamp-albums-unsupported-file, status: unverified -->

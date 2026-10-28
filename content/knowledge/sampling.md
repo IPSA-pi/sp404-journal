@@ -15,6 +15,12 @@ order: 10
   <!-- learned: 2026-10-12, entry: 2026-10-12-usb-c-recording-and-project-bpm, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/8584103589852939.html, status: manual -->
 - If the audio is already a file on the PC, importing it from the SD card is cleaner than recording it over USB (no level or timing errors); record over USB for streams, a DAW or a browser.
   <!-- learned: 2026-10-12, entry: 2026-10-12-usb-c-recording-and-project-bpm, status: unverified -->
+- `[REC]` in sample mode is sampling standby and stops pattern playback; to record while a pattern plays, start from pattern mode with `[RESAMPLE]`.
+  <!-- learned: 2026-10-25, entry: 2026-10-25-recording-guitar-over-a-pattern, status: unverified -->
+- Resampling with ROUTING "ExtIn" records only the external input while the unit's playback runs as backing, e.g. a guitar loop over drums.
+  <!-- learned: 2026-10-25, entry: 2026-10-25-recording-guitar-over-a-pattern, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7907213978473355.html, status: manual -->
+- A resampled pattern has no count-in: record two extra bars' worth (e.g. 8 bars for a 4-bar part), start in bar 5 and trim the front with `[START/END]`.
+  <!-- learned: 2026-10-25, entry: 2026-10-25-recording-guitar-over-a-pattern, status: unverified -->
 
 ## Sampling settings
 - Press `[REC]`: empty pads blink red. `[CTRL 1]` sets the sample tempo, `[CTRL 3]` the input volume. Press a blinking pad, then `[REC]` to start; press the pad or `[REC]` again to stop; `[EXIT]` cancels.
@@ -41,6 +47,12 @@ order: 10
   <!-- learned: 2026-10-13, entry: 2026-10-13-sampling-best-practices-and-pattern-quantize, status: unverified -->
 - When preparing loops in a DAW, run it at 48 kHz (the unit's rate) and loop exactly 1, 2 or 4 bars; an exported exact-length WAV at a known tempo needs no trimming on the unit.
   <!-- learned: 2026-10-11, entry: 2026-10-11-recording-a-loop-in-sync-with-project-bpm, status: unverified -->
+- Ableton export for the unit: loop brace on exact bars, File > Export Audio/Video with Sample Rate 48000, Bit Depth 16 (dither on), Normalize off, Render as Loop off; the file then matches the unit's 48 kHz 16-bit format exactly.
+  <!-- learned: 2026-10-18, entry: 2026-10-18-using-the-sp-404mkii-with-ableton-live, status: unverified -->
+- Put the tempo and bar count in the filename (`chords_92bpm_4bar.wav`): the unit reads no tempo from filenames or metadata, so the name is the only reminder.
+  <!-- learned: 2026-10-18, entry: 2026-10-18-using-the-sp-404mkii-with-ableton-live, status: unverified -->
+- Sampling a DAW over USB: set REC BPM to the DAW tempo, length in bars, END Snap ON, and count-in WAIT so recording starts on the DAW's first beat; the sample's tempo is then already correct for BPM SYNC.
+  <!-- learned: 2026-10-18, entry: 2026-10-18-using-the-sp-404mkii-with-ableton-live, status: unverified -->
 - Big tempo stretches sound grainy; staying within about ±10 BPM of the original keeps it clean (rule of thumb, not a manual figure).
   <!-- learned: 2026-10-11, entry: 2026-10-11-recording-a-loop-in-sync-with-project-bpm, status: unverified -->
 
@@ -79,6 +91,8 @@ order: 10
   <!-- learned: 2026-10-11, entry: 2026-10-11-recording-a-loop-in-sync-with-project-bpm, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7935706778507915.html, status: manual -->
 - SYSTEM > "BPM Auto Dtct" ON detects the tempo when a sample is imported, using the "BPM Detect Rng" range.
   <!-- learned: 2026-10-12, entry: 2026-10-12-chopping-samples-and-sample-tips, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7964634778545547.html, status: manual -->
+- Tap tempo sets the project or bank tempo, not the sample's. To give a sample a tapped tempo, play it with BPM SYNC off, tap, then enter the value in BPM SET MANU or MANU-F.
+  <!-- learned: 2026-10-27, entry: 2026-10-27-tap-tempo-then-chop, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7935706778507915.html, status: manual -->
 
 ## Pitch, speed and volume
 - `[PITCH/SPEED]`, then a pad: `[CTRL 1]` SPEED (50–150%, only when BPM SYNC is off), `[CTRL 2]` PITCH, `[CTRL 3]` VOLUME (0–127); `[SHIFT]` + `[CTRL 2]` FINE, `[SHIFT]` + `[CTRL 3]` PAN.
@@ -89,6 +103,8 @@ order: 10
   <!-- learned: 2026-10-12, entry: 2026-10-12-usb-c-recording-and-project-bpm, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7914381978479499.html, status: manual -->
 - To make a speed/pitch change permanent, resample the pad to a new one.
   <!-- learned: 2026-10-12, entry: 2026-10-12-usb-c-recording-and-project-bpm, status: unverified -->
+- VARI MODE is Roland's VariPhrase time-stretch engine, first used in the VP-9000 sampler.
+  <!-- learned: 2026-10-28, entry: 2026-10-28-melodics-koala-and-variphrase, status: unverified -->
 
 ## Groove
 - The Humanize / Rate / Groove screen is the Groove screen: press `[PITCH/SPEED]`, then `[ROLL]`. `[CTRL 1]` Humanize (Off, Low, Mid, High), `[CTRL 2]` Rate (1–15), `[CTRL 3]` Groove template (Off, 8<…16>>).
@@ -103,6 +119,8 @@ order: 10
   <!-- learned: 2026-10-12, entry: 2026-10-12-chopping-samples-and-sample-tips, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7913255578478731.html, status: manual -->
 - A short RELEASE hides clicks at the ends of slices.
   <!-- learned: 2026-10-12, entry: 2026-10-12-chopping-samples-and-sample-tips, status: unverified -->
+- On the ENVELOPE screen hold `[MARK]` and press a pad to select it without playing it.
+  <!-- learned: 2026-10-17, entry: 2026-10-17-envelopes-on-several-pads-chops-and-export, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7913255578478731.html, status: manual -->
 
 ## Limits
 - Samples are stored as 16-bit linear, 48 kHz; the maximum sampling time is 16 minutes (about 185 MB per sample).
