@@ -81,6 +81,8 @@ order: 30
   <!-- learned: 2026-10-24, entry: 2026-10-24-pattern-undo-erase-and-microscope, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7929178778498699.html, status: manual -->
 - `[COPY]`, the source pattern, the destination, then `[REMAIN]` lets you keep only chosen pads, e.g. to split drums from melody.
   <!-- learned: 2026-10-19, entry: 2026-10-19-editing-pattern-length-and-adding-tr-rec, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7932916378504075.html, status: manual -->
+- Copy a pattern minus the kick: after `[REMAIN]` the used pads light dimly white; press every pad except the kick (fully white), `[REMAIN]` again, then `[VALUE]` or `[COPY]`. The destination is overwritten.
+  <!-- learned: 2026-11-04, entry: 2026-11-04-copying-a-pattern-without-the-kick, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7932916378504075.html, status: manual -->
 - `[SHIFT]` + pad `[5]` swaps two patterns, `[COPY]` + `[EXIT]` copies a bank, `[SHIFT]` + `[COPY]` protects a bank; swap, bank copy and delete need the pattern stopped, and deletes can't be undone.
   <!-- learned: 2026-10-19, entry: 2026-10-19-editing-pattern-length-and-adding-tr-rec, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7931738778502539.html, status: manual -->
 - Patterns store notes, not audio: change a pad's sample and the pattern plays the new one.

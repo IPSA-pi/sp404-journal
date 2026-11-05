@@ -65,6 +65,10 @@ order: 20
   <!-- learned: 2026-10-14, entry: 2026-10-14-effects-buttons-and-delay-feedback, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7954343578531723.html, status: manual -->
 - BUS 3 and BUS 4 sit after BUS 1/2 as master effects; their effects are stored in FAVORITE 1–16 (Bypass disables them), independent of the project. `[VALUE]` + `[BUS FX]` bypasses them without changing the FAVORITE.
   <!-- learned: 2026-10-14, entry: 2026-10-14-effects-buttons-and-delay-feedback, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7954932378532491.html, status: manual -->
+- Bypassing BUS 3/4 (`[VALUE]` + `[BUS FX]` or FAVORITE "Bypass") only removes their effects; the audio keeps playing. The manual has no mute for BUS 3/4.
+  <!-- learned: 2026-11-04, entry: 2026-11-04-turning-off-bus-3-and-4, status: unverified -->
+- BUS 1 and BUS 2 feed BUS 3 and BUS 4 in series; DRY joins either after BUS 4 or before BUS 3.
+  <!-- learned: 2026-11-04, entry: 2026-11-04-sidechaining-from-a-kick, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7898228378462603.html, status: manual -->
 - EFX SET > OTHER > DRY Routing = "BUS3" sends the DRY bus through BUS 3 and BUS 4; "DRY" keeps it effect-free.
   <!-- learned: 2026-10-14, entry: 2026-10-14-effects-buttons-and-delay-feedback, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7971969178547083.html, status: manual -->
 - SIDE CHAIN: SOURCE is the bus that triggers compression (e.g. the kick's bus), TARGET the bus that ducks; adjust THRESHOLD, RATIO, RELEASE and GAIN.

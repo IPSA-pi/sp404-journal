@@ -19,6 +19,12 @@ order: 110
 ## Compression and ducking
 - SIDE CHAIN GAIN adds 0.0–6.0 dB of makeup; setting SOURCE and TARGET to the same bus makes it a plain compressor. DRY can't be chosen while DRY Routing is "BUS 3".
   <!-- learned: 2026-10-19, entry: 2026-10-19-mixing-the-volume-of-samples, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/564410379565838475.html, status: manual -->
+- Side chain is bus to bus, one SOURCE and one TARGET. Put the kick alone on its source bus (e.g. DRY via `[REMAIN]` + pad), since anything else there also triggers ducking.
+  <!-- learned: 2026-11-04, entry: 2026-11-04-sidechaining-from-a-kick, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/564410379565838475.html, status: manual -->
+- To duck a single sample, put only that sample on BUS 1 (or BUS 2) and make that bus the TARGET.
+  <!-- learned: 2026-11-04, entry: 2026-11-04-sidechaining-from-a-kick, status: unverified -->
+- To duck the whole mix except the kick: kick on DRY, DRY Routing "DRY", TARGET BUS 3 or BUS 4. Untested whether this works with FAVORITE on "Bypass".
+  <!-- learned: 2026-11-04, entry: 2026-11-04-sidechaining-from-a-kick, status: unverified -->
 - Roland's side-chain tip: find the threshold with RATIO at maximum and RELEASE at minimum, then set RATIO to about 100 and lengthen RELEASE for short, punchy kicks.
   <!-- learned: 2026-10-19, entry: 2026-10-19-mixing-the-volume-of-samples, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/564410379565838475.html, status: manual -->
 - The Compressor effect has no threshold knob, only SUSTAIN, ATTACK, RATIO and LEVEL, so input level decides how hard it works. It can get very loud.

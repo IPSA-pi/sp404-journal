@@ -21,6 +21,12 @@ order: 40
   <!-- learned: 2026-10-12, entry: 2026-10-12-chopping-samples-and-sample-tips, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7895796378459531.html, status: manual -->
 - To envelope only some pads, put them in a mute group and hold `[COPY]` while turning knobs; remove the group afterwards if they need to layer.
   <!-- learned: 2026-10-17, entry: 2026-10-17-envelopes-on-several-pads-chops-and-export, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7913255578478731.html, status: manual -->
+- Retune a whole bank: `[PITCH/SPEED]`, press a pad in the bank, then hold `[REMAIN]` and turn `[CTRL 2]` (PITCH).
+  <!-- learned: 2026-11-04, entry: 2026-11-04-deleting-and-pitching-a-whole-bank, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7914381978479499.html, status: manual -->
+- The `[REMAIN]` bank-wide edit covers SPEED, PITCH, VOLUME, PAN, BPM, BPM SYNC, GATE, LOOP and REVERSE; FINE isn't on the list.
+  <!-- learned: 2026-11-04, entry: 2026-11-04-deleting-and-pitching-a-whole-bank, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7914381978479499.html, status: manual -->
+- Unknown whether `[REMAIN]` + PITCH sets one value for all samples or shifts each by the same amount.
+  <!-- learned: 2026-11-04, entry: 2026-11-04-deleting-and-pitching-a-whole-bank, status: unverified -->
 
 ## Pad parameters
 - Hold `[REMAIN]` to show the parameters of the selected pad's sample (and the remaining time while it plays).
@@ -29,5 +35,9 @@ order: 40
   <!-- learned: 2026-10-12, entry: 2026-10-12-chopping-samples-and-sample-tips, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7915789978481035.html, status: manual -->
 - Hold `[VALUE]` and press a pad to select its sample without playing it; with `[PATTERN SELECT]` lit it selects a pattern without playing it.
   <!-- learned: 2026-10-24, entry: 2026-10-24-silent-pad-select-and-live-performance-tricks, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/8004929178586251.html, status: manual -->
-- Deleting a sample: `[DEL]`, the pad, then `[VALUE]` or `[DEL]`; `[DEL]` + `[EXIT]` deletes a whole bank. A deleted sample can't be restored.
+- Deleting a sample: `[DEL]`, the pad, then `[VALUE]` or `[DEL]`. A deleted sample can't be restored.
   <!-- learned: 2026-10-17, entry: 2026-10-17-recording-modes-undo-and-tr-rec-sample-select, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7918785178485643.html, status: manual -->
+- Deleting a whole bank: hold `[DEL]` and press `[EXIT]` (DELETE BANK), press the bank `[A/F]`–`[E/J]` button, then `[VALUE]` or `[DEL]`.
+  <!-- learned: 2026-10-17, entry: 2026-10-17-recording-modes-undo-and-tr-rec-sample-select, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7918785178485643.html, status: manual -->
+- `[SHIFT]` + `[COPY]` protects the selected bank's samples and patterns from copying, overwriting and deletion; do it again to unprotect.
+  <!-- learned: 2026-11-04, entry: 2026-11-04-deleting-and-pitching-a-whole-bank, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7918273178484875.html, status: manual -->
