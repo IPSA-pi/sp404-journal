@@ -13,6 +13,18 @@ order: 50
   <!-- learned: 2026-10-11, entry: 2026-10-11-ableton-latin-percussion-pack-to-sd-card, status: unverified -->
 - 24-bit WAVs with a WAVE_FORMAT_EXTENSIBLE header (some Bandcamp downloads) may not import; the manual doesn't say. Plain 16-bit 48 kHz WAV is the safe conversion.
   <!-- learned: 2026-10-12, entry: 2026-10-12-bandcamp-albums-unsupported-file, status: unverified -->
+- 32-bit float WAVs are the likely cause of "Unsupported FILE" in sample packs (383 of 1,608 files in GUARACHA MIX). The manual doesn't list accepted bit depths, so convert them to 16-bit.
+  <!-- learned: 2026-11-08, entry: 2026-11-08-preparing-sample-packs-with-prepare-samples, status: unverified -->
+
+## Preparing files with prepare-samples.py
+- `tools/prepare-samples.py --check "<folder>"` lists a pack's format problems (float, bit depth, sample rate, MP3, non-ASCII names) without writing anything.
+  <!-- learned: 2026-11-08, entry: 2026-11-08-preparing-sample-packs-with-prepare-samples, status: unverified -->
+- `tools/prepare-samples.py --jobs 8 "<folder>" /mnt/f/IMPORT/<PACK>` converts every audio file to plain 48 kHz, 16-bit WAV (soxr resampling with dither, metadata removed), keeps the subfolders and skips non-audio files.
+  <!-- learned: 2026-11-08, entry: 2026-11-08-preparing-sample-packs-with-prepare-samples, status: unverified -->
+- The script turns names into plain ASCII (`--keep-names` turns this off), turns down float/MP3 sources only if they go above 0 dBFS, and never overwrites existing output files without `--force`.
+  <!-- learned: 2026-11-08, entry: 2026-11-08-preparing-sample-packs-with-prepare-samples, status: unverified -->
+- Workflow: mount `F:` in WSL, run `--check`, convert into `F:\IMPORT\<PACK>`, eject `F:` in Windows, then import on the unit.
+  <!-- learned: 2026-11-08, entry: 2026-11-08-preparing-sample-packs-with-prepare-samples, status: unverified -->
 
 ## Importing on the unit
 - Files on the card do nothing until imported: put them in the card's `IMPORT` folder, then `[SHIFT]` + pad `[14]` > IMPORT from SD-CARD > SAMPLE, press a pad (empty pads blink yellow) and pick the file with `[VALUE]`.

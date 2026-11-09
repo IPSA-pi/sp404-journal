@@ -33,3 +33,5 @@ order: 90
   <!-- learned: 2026-10-16, entry: 2026-10-16-where-to-get-drum-and-sample-libraries, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/8010023578592395.html, status: manual -->
 - UTILITY > FACTORY RESET > ALL DATA restores the samples and patterns to the factory defaults from the unit itself, so the Roland download is only needed if that data is lost or you want the files on a computer.
   <!-- learned: 2026-10-16, entry: 2026-10-16-where-to-get-drum-and-sample-libraries, manual: https://static.roland.com/manuals/sp-404mk2_reference_v550/en-US/7963175578543243.html, status: manual -->
+- Run new packs through `tools/prepare-samples.py` before copying them to the card; commercial packs often mix 32-bit float, 24-bit, 44.1 kHz and MP3 files.
+  <!-- learned: 2026-11-08, entry: 2026-11-08-preparing-sample-packs-with-prepare-samples, status: unverified -->
